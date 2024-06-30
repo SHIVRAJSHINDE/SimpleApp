@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <form action="/postdata" method="POST">
+
+    <div class="form-group">
+        <label for="nameInput">First Name</label>
+        <input type="text" class="form-control" name="firstname" id="nameInput" placeholder="Enter your First Name">
+      </div>
+
+      <div class="form-group">
+        <label for="nameInput">Last Name</label>
+        <input type="text" class="form-control" name="lastname" id="nameInput" placeholder="Enter your Last Name">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </div>
+
+
+
+{% endblock %}
